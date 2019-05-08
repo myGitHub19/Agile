@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<title>Register</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<style>
+    body {
+        background-image: url('DirtCave.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #content {
+        margin: 100px auto;
+        width: 500px;
+        height: 400px;
+        background-color: #e1e1e1;
+        border-radius: 20px;
+        display: inline-block;    
+    }
+
+
+    h1 {
+        position: relative;
+        top: -30px;
+        left: 35px;
+        margin: 50px 100px;
+        font-family: 'Roboto', sans-serif;
+        color: black;
+        left: 0%;
+    }
+    
+    #reg_form {
+        position: relative;
+        top: -50px;
+        margin: -20px 5px;
+        display: inline-block;
+    }
+
+    input {
+        border-radius: 10px;
+        background-color: #cacaca;
+        padding: 2px;
+        margin: 10px auto;
+        width: 350px;
+        height: 40px;
+        box-shadow: none;
+        border: none;
+        display: inline-block;
+    }
+
+    #regBtn{
+        position: relative;
+        background-color: #a099a83d;
+        width: 120px;
+        height: 40px;
+        color: black;
+        display: inline-block;
+    }
+
+    #sign_in{
+        position: relative;
+        height: 50px;
+        width: 500px;
+        top: 30px;
+        line-height: 48px;
+        background-color:rgb(109, 102, 102);
+        color: #e1e1e1;
+        display: inline-block;
+        border-radius: 0px 0px 20px 20px;
+        font-size: 16px;
+    }
+
+
+    #reg_note {
+        position: relative;
+        height: 50px;
+        top: 10px;
+        line-height: 48px;
+        color: #e1e1e1;
+        border-radius: 20px 20px 20px 20px;
+        font-size: 16px;
+        margin: -10px;
+        left: 95px;
+    }
+
+    .wrapper {
+        text-align:center;
+
+    }
+</style>
+
+<body>
+    <div class="wrapper">
+        <div id="content">
+            <h1>Register</h1>
+            <div id="reg_form">
+                <form action="/create-user" method="POST">
+                    <input name="username" type="text" placeholder="    Username" required="required"> <br>
+                    <input name="password" type="password" placeholder="    Password" required="required"> <br>
+                    <input name="password_confirm" type="password" placeholder="    Confirm Password" required="required"> <br>
+                    <input name="email" type="email" placeholder="    Email" required="required'"> <br>
+                    <input type="submit" id="regBtn">
+                </form>
+                <div id="sign_in">Already have an account?&nbsp;&nbsp; <a href="/">Sign in</a></p></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+</html>
